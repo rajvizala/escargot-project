@@ -1,9 +1,11 @@
 import { VertexAI } from '@google-cloud/vertexai';
 import { ExternalAccountClient } from 'google-auth-library';
 import type { RemixResult } from '@/types/card';
+import { getVercelOidcToken } from '@vercel/oidc';
 
 async function getVertexAIClient(): Promise<VertexAI> {
-  const oidcToken = process.env.VERCEL_OIDC_TOKEN;
+  // const oidcToken = process.env.VERCEL_OIDC_TOKEN;
+  const oidcToken = await getVercelOidcToken();
   if (!oidcToken) {
     throw new Error('VERCEL_OIDC_TOKEN not available — run via: vercel dev');
   }
