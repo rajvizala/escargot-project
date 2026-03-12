@@ -1,0 +1,91 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition:
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.tile:hover {
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-3px);
+}
+
+.tile:hover .image {
+  transform: scale(1.04);
+}
+
+.tile:active {
+  transform: scale(0.98);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 320 / 440;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.remixBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  background: var(--color-green-700);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.artist {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: var(--color-charcoal);
+}
+
+.occasionPill {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+/* Occasion colors */
+.birthday  { background: #FFF1E6; color: #C2410C; }
+.sympathy  { background: #EDE9FE; color: #6D28D9; }
+.congrats  { background: #ECFDF5; color: #047857; }
+.friendship{ background: #FEF9C3; color: #A16207; }
+.funny     { background: #FFE4E6; color: #BE123C; }
+.love      { background: #FCE7F3; color: #BE185D; }

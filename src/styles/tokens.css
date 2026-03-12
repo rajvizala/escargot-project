@@ -1,0 +1,42 @@
+:root {
+  /* ── Brand Colors ── */
+  --color-green-900: #0F3D22;
+  --color-green-700: #1B5E37;
+  --color-green-500: #2E8B57;
+  --color-green-100: #E8F4EC;
+  --color-ivory: #FAF8F5;
+  --color-sand: #E0D9CF;
+  --color-charcoal: #2C2C2C;
+  --color-white: #FFFFFF;
+
+  /* ── Typography ── */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  /* ── Spacing ── */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* ── Radii ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-card: 14px;
+  --radius-pill: 999px;
+
+  /* ── Aliases ── */
+  --color-brand: var(--color-green-700);
+
+  /* ── Shadows ── */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}

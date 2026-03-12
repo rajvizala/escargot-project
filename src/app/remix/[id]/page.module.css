@@ -1,0 +1,124 @@
+.page {
+  min-height: 100dvh;
+  padding: var(--space-lg) var(--space-md);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Input Phase ── */
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.thumbnail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.thumbImage {
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+.thumbTitle {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.thumbArtist {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-charcoal);
+  opacity: 0.6;
+}
+
+.inputLabel {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-charcoal);
+}
+
+.promptInput {
+  width: 100%;
+  padding: var(--space-md);
+  border: 1.5px solid var(--color-sand);
+  border-radius: var(--radius-md);
+  background: var(--color-ivory);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-charcoal);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.promptInput:focus {
+  outline: none;
+  border-color: var(--color-green-700);
+  box-shadow: 0 0 0 3px var(--color-green-100);
+}
+
+/* ── Prompt Chips ── */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.chip {
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background: var(--color-green-100);
+  color: var(--color-green-700);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.chip:hover {
+  background: var(--color-white);
+  border-color: var(--color-green-700);
+}
+
+.errorMsg {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: #c0392b;
+  padding: var(--space-sm) var(--space-md);
+  background: #fdecea;
+  border-radius: var(--radius-md);
+}
+
+/* ── Reveal Phase ── */
+.revealSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.revealCard {
+  width: 100%;
+  max-width: 360px;
+}
+
+.philosophy {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--color-green-700);
+  text-align: center;
+}
+
+.revealActions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}

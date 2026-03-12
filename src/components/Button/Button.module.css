@@ -1,0 +1,67 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Primary — green fill */
+.primary {
+  background: var(--color-green-700);
+  color: var(--color-white);
+  border-color: var(--color-green-700);
+}
+
+.primary:hover {
+  background: var(--color-green-900);
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lift);
+}
+
+/* Secondary — outlined */
+.secondary {
+  background: transparent;
+  color: var(--color-green-700);
+  border-color: var(--color-green-700);
+}
+
+.secondary:hover {
+  background: var(--color-green-100);
+  transform: scale(1.02);
+}
+
+/* Disabled */
+.btn:disabled,
+.btn[aria-disabled='true'] {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn:disabled:hover,
+.btn[aria-disabled='true']:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Full width variant */
+.fullWidth {
+  width: 100%;
+}
