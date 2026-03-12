@@ -2,7 +2,7 @@
 
 I'm on Android. I couldn't access your app. So I built what the web experience should look like — including the AI Remix feature brought to a platform it doesn't exist on yet.
 
-Live demo: [still waiting to deployed link]
+Live demo: https://escargot-project-two.vercel.app/
 
 ---
 
